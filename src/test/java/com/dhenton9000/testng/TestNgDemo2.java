@@ -19,28 +19,28 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 
-public class TestNgDemo {
+public class TestNgDemo2 {
 
-    private static final Logger LOG = LoggerFactory.getLogger(TestNgDemo.class);
+    private static final Logger LOG = LoggerFactory.getLogger(TestNgDemo2.class);
 
     @BeforeClass
     public static void beforeClass() {
-        LOG.debug("in beforeClass");
+        LOG.debug("in beforeClass2");
     }
 
     @BeforeMethod
     public static void beforeMethod() {
-        LOG.debug("in beforeMethod");
+        LOG.debug("in beforeMethod2");
     }
 
     @AfterClass
     public static void afterClass() {
-        LOG.debug("in afterClass");
+        LOG.debug("in afterClass2");
     }
 
     @AfterMethod
     public static void afterMethod() {
-        LOG.debug("in afterMethod");
+        LOG.debug("in afterMethod2");
     }
 
     @Test(enabled = false)
@@ -49,21 +49,21 @@ public class TestNgDemo {
     }
 
     @Test
-    public void testSomething() {
-        LOG.debug("@@@testSomething@@@");
+    public void testSomething2() {
+        LOG.debug("$$$testSomething2$$$");
         assertTrue(true);
 
     }
 
     @Test
-    public void testFail() {
-        LOG.debug("@@@testFail@@@");
+    public void testFail2() {
+        LOG.debug("$$$testFail2$$$");
         fail("get a job");
     }
 
     @Test
-    public void testEqualityFail() {
-        LOG.debug("@@@testEqualityFail@@@");
+    public void testEqualityFail2() {
+        LOG.debug("$$$testEqualityFail2$$$");
         assertEquals(3, 5, "get a job");
     }
 }
