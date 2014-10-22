@@ -31,7 +31,7 @@
                 <version>2.16</version>
                 <configuration>
                     <includes>
-                        <include>/com/**/*.java</include>
+                        <include>com/**/*.java</include>
                     </includes>
                 </configuration>
             </plugin>
