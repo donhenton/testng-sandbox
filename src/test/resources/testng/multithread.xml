@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Multithread Suite" verbose="4">
+    <!--
+  <test name="Regression1">
+    <classes>
+      <class name="test.sample.ParameterSample"/>
+      <class name="test.sample.ParameterTest"/>
+    </classes>
+  </test>
+  
+    -->
+    <test name="MultithreadTests" parallel="classes" thread-count="3">
+        <classes>
+            <class name="com.dhenton9000.multithread.TestOne"/>
+            <class name="com.dhenton9000.multithread.TestTwo"/>
+            <class name="com.dhenton9000.multithread.TestThree"/>
+        </classes>
+    </test>
+    <parameter name="alpha" value="alpha"/>
+    <parameter name="beta" value="5"/>
+    <parameter name="gamma" value="gamma"/>
+    <test name="ParamTests" parallel="classes" thread-count="1">
+        <classes>
+            <class name="com.dhenton9000.multithread.ParamPassing"/>
+        </classes>
+    </test>
+    
+    <test name="ConcurrentTests" parallel="methods" thread-count="3">
+        <classes>
+            <class name="com.dhenton9000.multithread.TestThreads"/>
+        </classes>
+    </test>
+</suite>

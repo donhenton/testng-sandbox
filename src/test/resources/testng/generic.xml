@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+
+http://testng.org/doc/documentation-main.html#testng-xml
+
+-->
+
+
+
+  
+<suite name="Generic Suite" verbose="4" >
+  
+<!--
+  <test name="Regression1">
+    <classes>
+      <class name="test.sample.ParameterSample"/>
+      <class name="test.sample.ParameterTest"/>
+    </classes>
+  </test>
+  
+  -->
+  
+    <test name="GenericTests" parallel="classes" thread-count="2"  >
+    <packages>
+      <package name="com.dhenton9000.testng" />
+   </packages>
+ </test>
+
+  
+</suite>

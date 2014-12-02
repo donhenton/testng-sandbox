@@ -1,0 +1,5 @@
+http://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html
+
+command line testing invocation:
+
+mvn clean test -P multithread
