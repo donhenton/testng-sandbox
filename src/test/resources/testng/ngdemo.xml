@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Environment Demo Suite" verbose="4">
+   
+    <test name="EnvTests" parallel="classes" thread-count="3">
+        <classes>
+            <class name="com.dhenton9000.testng.env.ReadEnvTest"/>
+            
+        </classes>
+    </test>
+    <parameter name="alpha" value="alpha"/>
+    <parameter name="beta" value="5"/>
+    <parameter name="gamma" value="gamma"/>
+    <test name="ParamTests" parallel="classes" thread-count="1">
+        <classes>
+            <class name="com.dhenton9000.multithread.ParamPassing"/>
+        </classes>
+    </test>
+    
+    
+</suite>

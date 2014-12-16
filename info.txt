@@ -1,5 +1,25 @@
 http://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html
 
 command line testing invocation:
-
+This runs the multithread profile
 mvn clean test -P multithread
+
+
+
+
+
+This invocation will set up the env.properties file to be pulled from
+the src/env/alpha folder, and run the ngdemo.xml testng file
+
+this demonstrates setting an environment AND requesting a specific set of
+arbitrary tests
+mvn clean test -Palpha -DtestNgFile=ngdemo
+
+You must specify either the specific profiles (generic/multithread)
+OR
+
+a profile that sets and environment (alpha,beta) and then the testNgFile to run
+
+
+mvn clean test -Palpha -DtestNgFile=generic 
+is legal as well
